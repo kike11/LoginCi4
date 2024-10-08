@@ -1,0 +1,220 @@
+INFO - 2024-10-04 00:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 00:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 00:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 00:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 00:02:36 --> Error: Call to undefined function ser_value()
+[Method: GET, Route: register]
+in APPPATH/Views/register.php on line 16.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH/Controllers/Users.php(9): view('register')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 00:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 00:03:14 --> Error: Call to undefined function set_value()
+[Method: GET, Route: register]
+in APPPATH/Views/register.php on line 16.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH/Controllers/Users.php(9): view('register')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 00:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 00:04:04 --> Error: Call to undefined function set_value()
+[Method: GET, Route: register]
+in APPPATH/Views/register.php on line 11.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('register', [], true)
+ 4 APPPATH/Controllers/Users.php(9): view('register')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users->index()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 00:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 00:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 00:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 00:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 17:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-04 17:37:14 --> Error: Class "App\Controllers\UsersModel" not found
+[Method: POST, Route: register]
+in APPPATH/Controllers/Users.php on line 25.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users->create()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 17:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-04 17:42:53 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): Peer certificate CN=`*.carrierzone.com' did not match expected CN=`smtp.grupomar.com' in /var/www/html/embarques/system/Email/Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', '/var/www/html/e...', 1916)
+#1 /var/www/html/embarques/system/Email/Email.php(1916): stream_socket_enable_crypto(Resource id #170, true, 121)
+#2 /var/www/html/embarques/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/html/embarques/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/html/embarques/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/html/embarques/app/Controllers/Users.php(47): CodeIgniter\Email\Email->send()
+#6 /var/www/html/embarques/system/CodeIgniter.php(933): App\Controllers\Users->create()
+#7 /var/www/html/embarques/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 /var/www/html/embarques/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/embarques/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/embarques/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /var/www/html/embarques/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-10-04 17:42:53 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-10-04 17:42:53 --> 220 mail37c75.carrierzone.com ESMTP Sendmail 8.14.9/8.13.1; Fri, 4 Oct 2024 17:42:44 +0000
+
+hello: 250-mail37c75.carrierzone.com Hello www.tuny.com.mx [187.237.91.178], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-SIZE 52428800
+250-DSN
+250-AUTH LOGIN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+CRITICAL - 2024-10-04 17:42:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "messages.php"
+[Method: POST, Route: register]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('messages.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('messages', [], true)
+ 3 APPPATH/Controllers/Users.php(57): view('messages', [...])
+ 4 APPPATH/Controllers/Users.php(50): App\Controllers\Users->showMessage('Revisa tu correo de registro para activar tu cuenta', 'Registro exitoso')
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Users->create()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-04 17:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 17:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 17:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-04 17:45:20 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): Peer certificate CN=`*.carrierzone.com' did not match expected CN=`smtp.grupomar.com' in /var/www/html/embarques/system/Email/Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', '/var/www/html/e...', 1916)
+#1 /var/www/html/embarques/system/Email/Email.php(1916): stream_socket_enable_crypto(Resource id #169, true, 121)
+#2 /var/www/html/embarques/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/html/embarques/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/html/embarques/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/html/embarques/app/Controllers/Users.php(47): CodeIgniter\Email\Email->send()
+#6 /var/www/html/embarques/system/CodeIgniter.php(933): App\Controllers\Users->create()
+#7 /var/www/html/embarques/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 /var/www/html/embarques/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/embarques/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/embarques/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /var/www/html/embarques/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-10-04 17:45:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-10-04 17:45:20 --> 220 mail112c75.carrierzone.com ESMTP Sendmail 8.14.9/8.13.1; Fri, 4 Oct 2024 17:45:10 +0000
+
+hello: 250-mail112c75.carrierzone.com Hello www.tuny.com.mx [187.237.91.178], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-SIZE 52428800
+250-DSN
+250-AUTH LOGIN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+INFO - 2024-10-04 17:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 17:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 17:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-04 18:28:08 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): Peer certificate CN=`*.carrierzone.com' did not match expected CN=`smtp.grupomar.com' in /var/www/html/embarques/system/Email/Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', '/var/www/html/e...', 1916)
+#1 /var/www/html/embarques/system/Email/Email.php(1916): stream_socket_enable_crypto(Resource id #170, true, 121)
+#2 /var/www/html/embarques/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/html/embarques/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/html/embarques/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/html/embarques/app/Controllers/Users.php(49): CodeIgniter\Email\Email->send()
+#6 /var/www/html/embarques/system/CodeIgniter.php(933): App\Controllers\Users->create()
+#7 /var/www/html/embarques/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 /var/www/html/embarques/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/embarques/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/embarques/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /var/www/html/embarques/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-10-04 18:28:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-10-04 18:28:08 --> 220 mail144c75.carrierzone.com ESMTP Sendmail 8.14.9/8.13.1; Fri, 4 Oct 2024 18:27:59 +0000
+
+hello: 250-mail144c75.carrierzone.com Hello www.tuny.com.mx [187.237.91.178], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-SIZE 52428800
+250-DSN
+250-AUTH LOGIN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+INFO - 2024-10-04 18:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:41:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 18:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-04 19:03:56 --> Email: sendWithSmtp throwed ErrorException: stream_socket_enable_crypto(): Peer certificate CN=`*.carrierzone.com' did not match expected CN=`smtp.grupomar.com' in /var/www/html/embarques/system/Email/Email.php:1916
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'stream_socket_e...', '/var/www/html/e...', 1916)
+#1 /var/www/html/embarques/system/Email/Email.php(1916): stream_socket_enable_crypto(Resource id #169, true, 121)
+#2 /var/www/html/embarques/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/html/embarques/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/html/embarques/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/html/embarques/app/Controllers/Users.php(52): CodeIgniter\Email\Email->send()
+#6 /var/www/html/embarques/system/CodeIgniter.php(933): App\Controllers\Users->create()
+#7 /var/www/html/embarques/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 /var/www/html/embarques/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/embarques/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /var/www/html/embarques/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /var/www/html/embarques/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2024-10-04 19:03:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-10-04 19:03:57 --> 220 mail110c75.carrierzone.com ESMTP Sendmail 8.14.9/8.13.1; Fri, 4 Oct 2024 19:03:47 +0000
+
+hello: 250-mail110c75.carrierzone.com Hello www.tuny.com.mx [187.237.91.178], pleased to meet you
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-SIZE 52428800
+250-DSN
+250-AUTH LOGIN
+250-STARTTLS
+250-DELIVERBY
+250 HELP
+
+starttls: 220 2.0.0 Ready to start TLS
+
+INFO - 2024-10-04 19:18:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:19:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-04 19:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

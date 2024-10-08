@@ -1,0 +1,33 @@
+version: "4.8"
+services:
+  php:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: serverphp
+    restart: always
+    ports:
+     - 8080:80
+    volumes:
+      - ./app:/var/www/html
+    environment:
+      - tz=${PHP_TZ}
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql
+    container_name: mysql-embarques
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASS}
+    ports: 
+      -  3307:3306
+    volumes:
+      - type: volume 
+        source: db_data
+        target: /var/lib/mysql
+volumes:
+  db_data: {}
